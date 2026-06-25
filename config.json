@@ -1,0 +1,18 @@
+{
+  "vector_length": 16,
+  "num_lanes": 4,
+  "num_vector_registers": 16,
+  "load_latency": 3,
+  "store_latency": 3,
+  "add_latency": 2,
+  "mul_latency": 4,
+  "div_latency": 8,
+  "reduction_latency": 3,
+  "startup_latency": 1,
+  "memory_bandwidth": 4,
+  "clock_frequency_mhz": 1000,
+  "num_memory_units": 1,
+  "num_alu_units": 1,
+  "enable_chaining": true,
+  "enable_masking": true
+}
