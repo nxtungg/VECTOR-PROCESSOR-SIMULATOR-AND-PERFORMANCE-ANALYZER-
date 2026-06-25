@@ -1,0 +1,6 @@
+workload,num_elements,scalar_cycles,vector_cycles,pipeline_cycles,speedup,throughput,lane_utilization
+Vector Add,8,88,20,17,5.18,0.4706,1.0
+SAXPY,8,120,27,17,7.06,0.4706,1.0
+Dot Product,4,49,19,15,3.27,0.2667,1.0
+Matrix-Vector,16,208,30,25,8.32,0.64,1.0
+Stride Access,16,128,17,14,9.14,1.1429,1.0

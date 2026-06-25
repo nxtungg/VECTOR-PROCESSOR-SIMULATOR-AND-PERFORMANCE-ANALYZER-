@@ -1,0 +1,10 @@
+# Dot Product
+# s = sum(A[i] * B[i])
+
+DATA A = [1, 2, 3, 4]
+DATA B = [10, 20, 30, 40]
+
+VLOAD V1, A
+VLOAD V2, B
+VMUL V3, V1, V2
+VREDUCE_SUM s, V3

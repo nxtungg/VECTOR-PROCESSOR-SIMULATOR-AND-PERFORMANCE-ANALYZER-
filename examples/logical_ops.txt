@@ -1,0 +1,21 @@
+# Logical Operations Example
+# AND, OR, XOR operations
+
+DATA A = [1, 2, 3, 4, 5, 6, 7, 8]
+DATA B = [1, 1, 0, 0, 1, 1, 0, 0]
+
+VLOAD V1, A
+VLOAD V2, B
+
+# Logical AND
+VAND V3, V1, V2
+
+# Logical OR
+VOR V4, V1, V2
+
+# Logical XOR
+VXOR V5, V1, V2
+
+VSTORE AND_RESULT, V3
+VSTORE OR_RESULT, V4
+VSTORE XOR_RESULT, V5

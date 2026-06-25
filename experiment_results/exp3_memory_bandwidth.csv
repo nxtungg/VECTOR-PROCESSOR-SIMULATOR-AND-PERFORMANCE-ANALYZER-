@@ -1,0 +1,6 @@
+memory_bandwidth,vector_length,lanes,scalar_cycles,vector_cycles,pipeline_cycles,speedup,throughput,bandwidth_utilization
+1,64,8,704,212,203,3.32,0.3019,0.9057
+2,64,8,704,116,107,6.07,0.5517,0.8276
+4,64,8,704,68,59,10.35,0.9412,0.7059
+8,64,8,704,44,35,16.0,1.4545,0.5455
+16,64,8,704,32,23,22.0,2.0,0.375

@@ -1,0 +1,23 @@
+# Vectorized convolution (im2col + GEMM)
+# Output 2x2, kernel 3x3 flatten = 9 phần tử
+DATA KERNEL = [1, 2, 1, 2, 4, 2, 1, 2, 1]
+DATA PATCH0 = [10, 20, 30, 20, 40, 30, 10, 20, 10]
+DATA PATCH1 = [20, 30, 40, 40, 30, 10, 20, 10, 30]
+DATA PATCH2 = [20, 40, 30, 10, 20, 10, 30, 10, 20]
+DATA PATCH3 = [40, 30, 10, 20, 10, 30, 10, 20, 40]
+
+VLOAD V0, KERNEL
+VLOAD V1, PATCH0
+VMUL V2, V1, V0
+VREDUCE_SUM out0, V2
+VLOAD V1, PATCH1
+VMUL V2, V1, V0
+VREDUCE_SUM out1, V2
+VLOAD V1, PATCH2
+VMUL V2, V1, V0
+VREDUCE_SUM out2, V2
+VLOAD V1, PATCH3
+VMUL V2, V1, V0
+VREDUCE_SUM out3, V2
+
+# Kết quả mong đợi (flatten): [400, 410, 320, 340]

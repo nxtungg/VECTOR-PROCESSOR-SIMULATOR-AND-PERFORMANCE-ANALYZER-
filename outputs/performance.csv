@@ -1,0 +1,3 @@
+mode,cycles,execution_time_ns,speedup,throughput_elem_per_cycle,lane_utilization,efficiency
+vector,20,20.0,4.4,0.4,1.0,1.0
+pipeline,17,17.0,5.176470588235294,0.47058823529411764,1.0,1.0

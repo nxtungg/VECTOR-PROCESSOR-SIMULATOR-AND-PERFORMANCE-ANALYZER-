@@ -1,0 +1,12 @@
+# SAXPY (Single-precision A*X Plus Y)
+# Y = a * X + Y
+
+DATA X = [1, 2, 3, 4, 5, 6, 7, 8]
+DATA Y = [10, 10, 10, 10, 10, 10, 10, 10]
+SCALAR a = 2
+
+VLOAD V1, X
+VLOAD V2, Y
+VMULS V3, V1, a
+VADD V4, V3, V2
+VSTORE Y, V4

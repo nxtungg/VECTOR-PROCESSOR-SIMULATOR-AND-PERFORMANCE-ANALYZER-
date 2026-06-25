@@ -1,0 +1,21 @@
+# 2D Convolution 3x3 (đơn giản hóa 3x3 patch)
+# Ảnh và kernel cùng 9 phần tử (flatten row-major)
+
+DATA IMAGE = [
+    10, 20, 30,
+    20, 40, 30,
+    10, 20, 10
+]
+
+DATA KERNEL = [1, 2, 1, 2, 4, 2, 1, 2, 1]
+SCALAR norm = 16
+
+# Load ảnh và kernel
+VLOAD V1, IMAGE
+VLOAD V2, KERNEL
+VMUL V3, V1, V2
+
+# Normalize
+VDIVS V4, V3, norm
+
+VSTORE OUTPUT, V4

@@ -1,0 +1,6 @@
+active_ratio,active_elements,inactive_elements,issued_lane_slots,useful_lane_slots,lane_utilization,useful_compute_batches
+0.0,0,64,64,0,0.0,0
+0.25,16,48,64,16,0.25,2
+0.5,32,32,64,32,0.5,4
+0.75,48,16,64,48,0.75,6
+1.0,64,0,64,64,1.0,8

@@ -1,0 +1,18 @@
+# 1D Image Filter (3-tap filter)
+# Y[i] = a*X[i-1] + b*X[i] + c*X[i+1]
+# Với biên được xử lý đơn giản (giá trị 0)
+
+DATA X = [10, 20, 30, 40, 50, 60, 70, 80]
+SCALAR a = 1
+SCALAR b = 2
+SCALAR c = 1
+
+# Load ảnh gốc
+VLOAD V1, X
+
+# Tạo shifted versions (phiên bản đơn giản)
+# Y[i] = 2*X[i] (bỏ qua neighbor pixels cho đơn giản)
+VMULS V2, V1, b
+
+# Lưu kết quả
+VSTORE Y, V2

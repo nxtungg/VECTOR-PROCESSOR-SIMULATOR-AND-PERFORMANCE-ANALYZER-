@@ -1,0 +1,5 @@
+instruction,start,end,duration,unit,opcode
+"VLOAD V1, A",0,5,5,Memory,VLOAD
+"VLOAD V2, B",5,10,5,Memory,VLOAD
+"VADD V3, V1, V2",10,15,5,Vector ALU,VADD
+"VSTORE C, V3",15,20,5,Memory,VSTORE

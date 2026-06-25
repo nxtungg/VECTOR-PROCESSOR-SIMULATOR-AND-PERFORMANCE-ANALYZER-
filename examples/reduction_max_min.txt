@@ -1,0 +1,15 @@
+# Reduction Max and Min Example
+# Tìm giá trị lớn nhất và nhỏ nhất trong mảng
+
+DATA A = [15, 3, 8, 12, 5, 20, 7, 10]
+
+VLOAD V1, A
+
+# Tìm max
+VREDUCE_MAX S_max, V1
+
+# Tìm min
+VREDUCE_MIN S_min, V1
+
+# Tổng
+VREDUCE_SUM S_sum, V1   

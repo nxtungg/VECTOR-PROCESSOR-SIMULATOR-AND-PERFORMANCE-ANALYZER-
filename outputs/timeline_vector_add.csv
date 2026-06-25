@@ -1,0 +1,5 @@
+instruction,opcode,start,end,duration,unit,issue_cycle,raw_stall
+"VLOAD V1, A",VLOAD,0,5,5,Memory,0,0
+"VLOAD V2, B",VLOAD,1,10,9,Memory,1,0
+"VADD V3, V1, V2",VADD,10,12,2,Vector ALU,2,8
+"VSTORE C, V3",VSTORE,12,17,5,Memory,3,9

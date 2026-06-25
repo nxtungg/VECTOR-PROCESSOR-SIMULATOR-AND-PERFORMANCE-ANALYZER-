@@ -1,0 +1,6 @@
+cache_lines,line_size,cycles,cache_hits,cache_misses,cache_hit_rate
+4,4,179,144,48,0.75
+8,4,179,144,48,0.75
+16,4,179,144,48,0.75
+32,4,179,144,48,0.75
+64,4,179,144,48,0.75

@@ -1,0 +1,12 @@
+# Gather and Scatter Example
+# Gather: load theo chỉ mục, Scatter: ghi theo chỉ mục
+
+DATA A = [100, 200, 300, 400, 500, 600, 700, 800]
+DATA IDX = [0, 2, 4, 6]
+DATA C = [0, 0, 0, 0, 0, 0, 0, 0]
+
+# Gather: lấy các phần tử tại chỉ mục trong IDX
+VGATHER V1, A, IDX
+
+# Scatter: ghi kết quả vào mảng C tại các chỉ mục
+VSCATTER C, IDX, V1

@@ -1,0 +1,63 @@
+======================================================================
+VECTOR PROCESSOR SIMULATOR - EXPERIMENT SUMMARY
+Generated: 2026-06-15 19:45:16
+======================================================================
+
+EXPERIMENT 1: Effect of Vector Length
+----------------------------------------
+  VL=  4:   16 cycles, Speedup= 2.75x, Util=100.0%
+  VL=  8:   20 cycles, Speedup= 4.40x, Util=100.0%
+  VL= 16:   28 cycles, Speedup= 6.29x, Util=100.0%
+  VL= 32:   44 cycles, Speedup= 8.00x, Util=100.0%
+  VL= 64:   76 cycles, Speedup= 9.26x, Util=100.0%
+
+EXPERIMENT 2: Effect of Number of Lanes
+----------------------------------------
+  Lanes= 1: Speedup= 7.04x, Ideal= 1x, Eff=100.0%
+  Lanes= 2: Speedup=10.35x, Ideal= 2x, Eff=100.0%
+  Lanes= 4: Speedup=13.54x, Ideal= 4x, Eff=100.0%
+  Lanes= 8: Speedup=16.00x, Ideal= 8x, Eff=100.0%
+  Lanes=16: Speedup=17.60x, Ideal=16x, Eff=100.0%
+
+EXPERIMENT 3: Effect of Memory Bandwidth
+----------------------------------------
+  BW= 1:  212 cycles, Speedup= 3.32x, BW Util=90.6%
+  BW= 2:  116 cycles, Speedup= 6.07x, BW Util=82.8%
+  BW= 4:   68 cycles, Speedup=10.35x, BW Util=70.6%
+  BW= 8:   44 cycles, Speedup=16.00x, BW Util=54.5%
+  BW=16:   32 cycles, Speedup=22.00x, BW Util=37.5%
+
+EXPERIMENT 4: Workload Comparison
+----------------------------------------
+  Vector Add     :   17 cycles, Speedup= 5.18x, Throughput=0.471
+  SAXPY          :   17 cycles, Speedup= 7.06x, Throughput=0.471
+  Dot Product    :   15 cycles, Speedup= 3.27x, Throughput=0.267
+  Matrix-Vector  :   25 cycles, Speedup= 8.32x, Throughput=0.640
+  Stride Access  :   14 cycles, Speedup= 9.14x, Throughput=1.143
+
+EXPERIMENT 5: Effect of Stride Access
+----------------------------------------
+  Stride= 1:   14 cycles, Effective BW=18.29
+  Stride= 2:   18 cycles, Effective BW=14.22
+  Stride= 4:   26 cycles, Effective BW=9.85
+  Stride= 8:   42 cycles, Effective BW=6.10
+  Stride=16:   42 cycles, Effective BW=6.10
+
+EXPERIMENT 6: Effect of Cache Size
+----------------------------------------
+  Lines= 4:  179 cycles, Hits=144, Misses= 48, Hit Rate=75.0%
+  Lines= 8:  179 cycles, Hits=144, Misses= 48, Hit Rate=75.0%
+  Lines=16:  179 cycles, Hits=144, Misses= 48, Hit Rate=75.0%
+  Lines=32:  179 cycles, Hits=144, Misses= 48, Hit Rate=75.0%
+  Lines=64:  179 cycles, Hits=144, Misses= 48, Hit Rate=75.0%
+
+EXPERIMENT 7: Effect of Mask Utilization
+----------------------------------------
+  Active=0%:  0 elements, Lane Util=0.0%
+  Active=25%: 16 elements, Lane Util=25.0%
+  Active=50%: 32 elements, Lane Util=50.0%
+  Active=75%: 48 elements, Lane Util=75.0%
+  Active=100%: 64 elements, Lane Util=100.0%
+
+======================================================================
+END OF REPORT

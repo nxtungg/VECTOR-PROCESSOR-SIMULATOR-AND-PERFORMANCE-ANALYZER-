@@ -1,0 +1,10 @@
+# Simple Matrix-Vector (Element-wise multiply)
+# A (16 phần tử) * X (16 phần tử) → Y (16 phần tử)
+
+DATA A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+DATA X = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+
+VLOAD V1, A
+VLOAD V2, X
+VMUL V3, V1, V2
+VSTORE Y, V3
