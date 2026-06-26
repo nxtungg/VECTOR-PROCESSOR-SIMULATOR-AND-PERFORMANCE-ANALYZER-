@@ -34,7 +34,7 @@ class VectorProcessorConfig:
     enable_masking: bool = True     # Bật/tắt vector masking
     
     # ===== Tham số mô phỏng =====
-    verbose: bool = False           # In chi tiết quá trình mô phỏng
+    verbose: bool = True           # In chi tiết quá trình mô phỏng
     
     def __post_init__(self):
         """Tự động validate sau khi khởi tạo"""
